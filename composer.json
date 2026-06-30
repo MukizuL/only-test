@@ -1,0 +1,7 @@
+{
+  "require": {
+    "ext-pdo": "*",
+    "robmorgan/phinx": "^0.16.11",
+    "ext-curl": "*"
+  }
+}
