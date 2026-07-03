@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = $_POST["password"];
     $passwordConfirm = $_POST["passwordConfirm"];
 
-    if ($_POST["password"] !== $_POST["passwordConfirm"]) {
+    if ($password !== $passwordConfirm) {
         $message = "Пароли не совпадают.";
     } else {
         if (!$username || !isValidEmail($email) || !isValidPhone($phone)) {
